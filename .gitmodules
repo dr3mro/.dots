@@ -1,0 +1,30 @@
+[submodule ".vim/plugged/YouCompleteMe"]
+	path = .vim/plugged/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git
+[submodule ".vim/plugged/vim-surround"]
+	path = .vim/plugged/vim-surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule ".vim/plugged/auto-pairs"]
+	path = .vim/plugged/auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs.git
+[submodule ".vim/plugged/fzf"]
+	path = .vim/plugged/fzf
+	url = https://github.com/junegunn/fzf.git
+[submodule ".vim/plugged/vim-cpp-enhanced-highlight"]
+	path = .vim/plugged/vim-cpp-enhanced-highlight
+	url = https://github.com/octol/vim-cpp-enhanced-highlight.git
+[submodule ".vim/plugged/vim-multiple-cursors"]
+	path = .vim/plugged/vim-multiple-cursors
+	url = https://github.com/terryma/vim-multiple-cursors.git
+[submodule ".vim/plugged/supertab"]
+	path = .vim/plugged/supertab
+	url = https://github.com/ervandew/supertab.git
+[submodule ".vim/plugged/vim-sxhkdrc"]
+	path = .vim/plugged/vim-sxhkdrc
+	url = https://github.com/baskerville/vim-sxhkdrc.git
+[submodule ".vim/plugged/fzf.vim"]
+	path = .vim/plugged/fzf.vim
+	url = https://github.com/junegunn/fzf.vim.git
+[submodule ".vim/plugged/nerdtree"]
+	path = .vim/plugged/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git

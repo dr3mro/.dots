@@ -43,6 +43,11 @@ prompt simpl
 
 # system info and AL ascii art
 al-info
+
+function add_git_submodules() {
+  for x in $(find . -type d) ; do if [ -d "${x}/.git" ] ; then cd "${x}" ; origin="$(git config --get remote.origin.url)" ; cd - 1>/dev/null; git submodule add "${origin}" "${x}" ; fi ; done
+}
+
 function powerline_precmd() {
     PS1="$(powerline-shell --shell zsh $?)"
 }
