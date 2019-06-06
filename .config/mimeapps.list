@@ -1,0 +1,34 @@
+[Added Associations]
+x-scheme-handler/http=exo-web-browser.desktop
+x-scheme-handler/https=exo-web-browser.desktop
+text/html=google-chrome.desktop;
+text/plain=vim.desktop;
+application/x-shellscript=gvim.desktop;vim.desktop;
+inode/directory=exo-file-manager.desktop
+x-scheme-handler/trash=exo-file-manager.desktop
+image/gif=gpicview.desktop;
+image/jpeg=gpicview.desktop;
+video/mp4=mpv.desktop;
+image/png=gpicview.desktop;
+application/pdf=org.pwmt.zathura.desktop;
+audio/mpeg=audacious.desktop;
+
+[Default Applications]
+inode/directory=Thunar.desktop
+image/jpeg=gpicview.desktop
+image/bmp=gpicview.desktop
+image/gif=gpicview.desktop
+image/jpg=gpicview.desktop
+image/png=gpicview.desktop
+image/tiff=gpicview.desktop
+image/x-bmp=gpicview.desktop
+image/x-pcx=gpicview.desktop
+image/x-tga=gpicview.desktop
+image/x-portable-pixmap=gpicview.desktop
+image/x-portable-bitmap=gpicview.desktop
+image/x-targa=gpicview.desktop
+image/x-portable-greymap=gpicview.desktop
+application/pcx=gpicview.desktop
+image/svg+xml=gpicview.desktop
+image/svg-xml=gpicview.desktop
+application/pdf=org.pwmt.zathura.desktop

@@ -1,0 +1,31 @@
+
+[audacious]
+equalizer_active=TRUE
+equalizer_preamp=1.92
+
+[audgui]
+equalizer_win=531,239,301,288
+
+[gtkui]
+column_widths=10,275,175,10,175,175,10,100,32,10,275,275,275,10,275
+player_height=743
+player_width=1366
+player_x=0
+player_y=25
+
+[gtkui-layout]
+item_count=0
+
+[skins]
+always_on_top=TRUE
+equalizer_x=559
+equalizer_y=-105
+mainwin_font=Sans 11
+player_shaded=TRUE
+player_x=1066
+player_y=40
+playlist_font=Sans 9
+playlist_x=834
+playlist_y=-192
+skin=/usr/share/audacious/Skins/Default
+twoway_scroll=TRUE

@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+disconnect1="/"
+disconnect2="\\"
+wconnected=""
+econnected=""
+mconnected=""
+echo $"!!"
+
+while true; do
+    id="$(ip link | awk '/state UP/ {print $2}')"
+    wid="$(tlp-stat -r | grep -i cdc_mbim | cut -d :'' -f2 )"
+
+    if ping -c 1 1.1.1.1 >/dev/null 2>&1; then
+        if [[ $id == e* ]]
+            then echo $econnected
+        elif [[ $wid == " wwan, connected" ]]
+            then echo $mconnected
+        elif [[ $id == w* ]]
+            then echo $wconnected
+        fi
+        sleep 5
+    else
+        echo "$disconnect1"  # /
+        sleep 0.6
+        echo "$disconnect2"  # \
+        sleep 0.6
+    fi
+done

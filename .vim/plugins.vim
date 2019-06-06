@@ -1,0 +1,12 @@
+call plug#begin('~/.vim/plugged')
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'tpope/vim-surround'
+Plug 'Valloric/YouCompleteMe'
+Plug 'baskerville/vim-sxhkdrc'
+Plug 'octol/vim-cpp-enhanced-highlight'
+Plug 'ervandew/supertab'
+Plug 'jiangmiao/auto-pairs'
+call plug#end()
