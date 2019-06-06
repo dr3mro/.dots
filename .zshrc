@@ -64,13 +64,16 @@ function install_powerline_precmd() {
 if [ "$TERM" != "linux" ]; then
     install_powerline_precmd
 fi
-plugins=(
-  git
-  bundler
-  dotenv
-  osx
-  rake
-  rbenv
-  ruby
-)
+#plugins=(
+#  git
+#  bundler
+#  dotenv
+#  osx
+#  rake
+#  rbenv
+#  ruby
+#)
+
+bindkey  "^[[H"   beginning-of-line
+bindkey  "^[[F"   end-of-line
 
