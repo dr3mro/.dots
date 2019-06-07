@@ -9,4 +9,6 @@ Plug 'baskerville/vim-sxhkdrc'
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'ervandew/supertab'
 Plug 'jiangmiao/auto-pairs'
+Plug 'ryanoasis/vim-devicons'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 call plug#end()

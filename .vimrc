@@ -1,11 +1,11 @@
 " Sane vim defaults for ArchLabs
 scriptencoding utf8
-
+set encoding=UTF-8
 " Arch defaults
 runtime! archlinux.vim
 
 " system clipboard (requires +clipboard)
-set clipboard=unnamedplus
+set clipboard=unnamed,unnamedplus
 
 " additional settings
 set modeline           " enable vim modelines
@@ -28,10 +28,10 @@ let g:cpp_class_scope_highlight = 1
 let g:cpp_member_variable_highlight = 1
 let g:cpp_class_decl_highlight = 1
 let g:mapleader = "\<Space>"
-noremap <Leader>y "*y
-noremap <Leader>p "*p
-noremap <Leader>Y "+y
-noremap <Leader>P "+p
+"noremap <Leader>y "*y
+"noremap <Leader>p "*p
+"noremap <Leader>Y "+y
+"noremap <Leader>P "+p
 " ------ enable additional features ------
 
 " enable mouse
