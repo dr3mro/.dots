@@ -3,7 +3,7 @@
 # Script to show battery status in dual battery Thinkpads 
 # Lisence  GPL 3
 # Setting Icons
-set -x
+#set -x
 
 BATICON_00_010=""
 BATICON_11_024=""
@@ -69,9 +69,9 @@ if [ $BAT0_STATUS = "Discharging" ] || [ $BAT1_STATUS = "Discharging" ];then
     WATTAGE="-$RATE Wh"
     TOTALTIMEINMINUTES=`echo "$TOTALENERGYNOW * 60  / ($RATE * 1000000) " | bc`
     T_hrs=`echo "$TOTALTIMEINMINUTES / 60" | bc`
-    T_min=`echo "$TOTALTIMEINMINUTES % 60" | bc -l`
+    T_min=`echo "$TOTALTIMEINMINUTES % 60" | bc`
 #    TIMEREMAINING=`echo "Remaining Time $T_hrs:$T_min"`
-TIMEREMAINING=`echo "Remaining Time $(printf '%02d:%02d' $T_hrs $T_min) h"`
+TIMEREMAINING=`echo "Remaining Time $(printf '%d:%02d' $T_hrs $T_min) h"`
 
 elif [ $BAT0_STATUS = "Charging" ] || [ $BAT1_STATUS = "Charging" ];then
     RATE=`echo "$POWER0 + $POWER1" | bc`
@@ -79,11 +79,11 @@ elif [ $BAT0_STATUS = "Charging" ] || [ $BAT1_STATUS = "Charging" ];then
     TOTALTIMEINMINUTES=`echo "($TOTALENERGYFULL - $TOTALENERGYNOW )* 60 / ($RATE * 1000000) " | bc`
 
     T_hrs=`echo "$TOTALTIMEINMINUTES / 60" | bc`
-    T_min=`echo "$TOTALTIMEINMINUTES % 60" | bc -l`
+    T_min=`echo "$TOTALTIMEINMINUTES % 60" | bc`
 
 #    T_hrs=`awk '{printf "%f", $TOTALTIMEINMINUTES / 60}'`
 #    T_min=`awk '{printf "%f", $TOTALTIMEINMINUTES % 60}'`
-TIMEREMAINING=`echo "Remaining Time $(printf '%02d:%02d' $T_hrs $T_min) h"`
+TIMEREMAINING=`echo "Remaining Time $(printf '%d:%02d' $T_hrs $T_min) h"`
 fi
 
 if [[ $BAT0_STATUS = "Idle" || $BAT0_STATUS = "Full" ]] ;then

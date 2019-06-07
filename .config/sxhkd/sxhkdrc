@@ -147,4 +147,5 @@ XF86MonBrightnessDown
 #    power_off.sh
 super + shift + t
     $TERM -t 'floatingTerm'
-
+super + Escape
+    rofi_run -w 

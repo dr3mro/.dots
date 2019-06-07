@@ -37,7 +37,7 @@
       <property name="&lt;Super&gt;p" type="string" value="xfce4-display-settings --minimal"/>
       <property name="override" type="bool" value="true"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;Delete" type="string" value="termite -e gotop"/>
-      <property name="&lt;Primary&gt;Escape" type="string" value="rofi_run -l"/>
+      <property name="&lt;Primary&gt;Escape" type="string" value="rofi_run -w"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">

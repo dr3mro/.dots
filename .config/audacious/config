@@ -29,3 +29,6 @@ playlist_x=834
 playlist_y=-192
 skin=/usr/share/audacious/Skins/Default
 twoway_scroll=TRUE
+
+[skins-layout]
+playlist-manager=538,287,288,192
