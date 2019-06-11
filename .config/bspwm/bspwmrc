@@ -20,7 +20,7 @@ xfsettingsd &
 al-polybar-session &
 
 # greenclip
-greenclip & 
+greenclip daemon & 
 
 # Set some bsp specific stuff
 bspc monitor -d I II III IV V VI  
