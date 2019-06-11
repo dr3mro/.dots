@@ -28,3 +28,9 @@
 [submodule ".vim/plugged/nerdtree"]
 	path = .vim/plugged/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
+[submodule ".vim/plugged/vim-nerdtree-syntax-highlight"]
+	path = .vim/plugged/vim-nerdtree-syntax-highlight
+	url = https://github.com/tiagofumo/vim-nerdtree-syntax-highlight.git
+[submodule ".vim/plugged/vim-devicons"]
+	path = .vim/plugged/vim-devicons
+	url = https://github.com/ryanoasis/vim-devicons.git
