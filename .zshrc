@@ -64,17 +64,7 @@ function install_powerline_precmd() {
 if [ "$TERM" != "linux" ]; then
     install_powerline_precmd
 fi
-#plugins=(
-#  git
-#  bundler
-#  dotenv
-#  osx
-#  rake
-#  rbenv
-#  ruby
-#)
 
-#bindkey  "^[[H"   beginning-of-line
-#bindkey  "^[[F"   end-of-line
-bindkey "\033[1~" beginning-of-line
-bindkey "\033[4~" end-of-line
+bindkey "${terminfo[khome]}" beginning-of-line
+bindkey "${terminfo[kend]}" end-of-line
+bindkey "${terminfo[kdch1]}" delete-char
