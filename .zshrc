@@ -74,6 +74,7 @@ fi
 #  ruby
 #)
 
-bindkey  "^[[H"   beginning-of-line
-bindkey  "^[[F"   end-of-line
-
+#bindkey  "^[[H"   beginning-of-line
+#bindkey  "^[[F"   end-of-line
+bindkey "\033[1~" beginning-of-line
+bindkey "\033[4~" end-of-line

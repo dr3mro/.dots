@@ -30,7 +30,7 @@ super + shift + r
 
 # quit bspwm normally
 super + x
-    rofi_run -l
+    rofi_run -c
 
 # close and kill
 super + {_,shift + }q
@@ -150,4 +150,4 @@ XF86MonBrightnessDown
 super + shift + t
     $TERM -t 'floatingTerm'
 super + Escape
-    rofi_run -w 
+    rofi_run -l 
